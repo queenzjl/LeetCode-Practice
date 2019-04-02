@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>romanToInt</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		/**
+		 * @param {string} s
+		 * @return {number}
+		 */
+		var json = {
+		    "I": 1,
+		    "V": 5,
+		    "X": 10,
+		    "L": 50,
+		    "C": 100,
+		    "D": 500,
+		    "M": 1000
+		}
+		var romanToInt = function(s) {
+		    if(!s){
+		        return;
+		    }
+		    var len = s.length;
+		    var num = 0;
+		    if(len == 1){
+		        return json[s];
+		    }
+		    for(var i=0; i<len-1; i++){
+		        var firNum = json[s[i]];
+		        var secNum = json[s[i+1]];
+		        if(firNum < secNum){
+		            num += secNum - firNum;
+		            i++;
+		        }else{
+		            num += firNum;
+		        }
+		    }
+		    // the last number may not have been executed, to make a judgment
+		    if(json[s[len-2]] >= json[s[len-1]]){
+		        num += json[s[len-1]];
+		    }
+		    return num;
+		};
+
+
+	</script>
+</body>
+</html>

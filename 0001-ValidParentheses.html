@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valid Parentheses</title>
+</head>
+<body>
+    <script>
+        var isValid = function(s) {
+            if(!s){
+                return true;
+            }
+            var len = s.length;
+            if(len % 2 !== 0){
+                return false;
+            }
+            var stack = [];
+            
+            for(var i=0; i<len; i++){
+                var sLen = stack.length;
+                if(!sLen){
+                    stack.push(s[i]);
+                }else if((s[i] == ')' && stack[sLen-1] == '(')
+                    || (s[i] == ']' && stack[sLen-1] == '[')
+                    || (s[i] == '}' && stack[sLen-1] == '{')){
+                        
+                    stack.pop();
+                    
+                }else{
+                    stack.push(s[i]);
+                }
+            }
+
+            if(stack.length){
+                return false;
+            }
+            return true;
+            
+        };   
+        
+        
+    </script>
+</body>
+</html>
