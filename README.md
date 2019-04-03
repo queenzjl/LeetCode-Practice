@@ -19,3 +19,7 @@ Will be updated for a long time, welcome attention, welcome star, thank you.
 [0007-toLowerCase 实现函数 ToLowerCase()](./0007-toLowerCase.html)
 
 [0008-reverseString 反转字符串](./0008-reverseString.html)
+
+[0009-threeSum 三数之和](./0009-threeSum.html)
+
+[0010-checkPossibility 非递减数列](./0010-checkPossibility.html)
