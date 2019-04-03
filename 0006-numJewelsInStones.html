@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>numJewelsInStones</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		/**
+			题目描述：
+				给定字符串J 代表石头中宝石的类型，和字符串 S代表你拥有的石头。 
+				S 中每个字符代表了一种你拥有的石头的类型，你想知道你拥有的石头中有多少是宝石。
+
+				J 中的字母不重复，J 和 S中的所有字符都是字母。字母区分大小写，因此"a"和"A"是不同类型的石头。
+		*/
+		/**
+		 * @param {string} J
+		 * @param {string} S
+		 * @return {number}
+		 */
+		var numJewelsInStones = function(J, S) {
+		    var num = 0;
+		    for(var i=0; i<S.length; i++){
+	    		if(J.indexOf(S[i]) !== -1){
+	    			num ++;
+	    		}
+		    }
+	
+		    return num;
+		};
+	</script>
+</body>
+</html>

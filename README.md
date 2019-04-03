@@ -13,3 +13,9 @@ Will be updated for a long time, welcome attention, welcome star, thank you.
 [0004-lengthOfLongestSubstring 最长无重复子串](./0004-lengthOfLongestSubstring.html)
 
 [0005-romanToInt 罗马数字转整数](./0005-romanToInt.html)
+
+[0006-numJewelsInStones 石头中的宝石](./0006-numJewelsInStones.html)
+
+[0007-toLowerCase 实现函数 ToLowerCase()](./0007-toLowerCase.html)
+
+[0008-reverseString 反转字符串](./0008-reverseString.html)
